@@ -34,11 +34,11 @@ class Newsletter_Subscriber_Widget extends WP_Widget {
             <form id="subscriber-form" method="post" action="<?php echo plugins_url().'/newsletter-subscriber/includes/newsletter-subscriber-mailer.php'; ?>">
             	<div class="form-group">
                 	<label for="name">Name: </label><br>
-                    <input type="text" id="name" name="name" class="form-control" required>
+                    <input type="text" id="name" name="name" class="form-control">
                 </div>
                 <div class="form-group">
                 	<label for="email">Email: </label><br>
-                    <input type="text" id="email" name="email" class="form-control" required>
+                    <input type="text" id="email" name="email" class="form-control">
                 </div>
                 <br>
                 <input type="hidden" name="recipient" value="<?php echo $instance['recipient']; ?>">
