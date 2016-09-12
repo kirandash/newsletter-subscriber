@@ -12,6 +12,10 @@ if( !defined('ABSPATH') ){
 	exit;
 }
 
+// Load text domain
+$path = dirname(plugin_basename(__FILE__)).'/languages';
+load_plugin_textdomain('',false,$path);
+
 // Load Scripts
 require_once( plugin_dir_path(__FILE__) . 'includes/newsletter-subscriber-scripts.php' );
 
